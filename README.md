@@ -3,10 +3,10 @@
 日报流程第一步：总结当天完成的需求，按五维度评估工时，写入 md 表格。
 
 ## 参见
-- [[daily-merge]]：日报合并（第二步）
-- [[git-commit]]：Git 提交规范
-- [[coding-rules]]：AI 编码协作规范
-- [[reread-claude-md]]：重新加载 CLAUDE.md 规则
+- [daily-merge](https://github.com/huzhw/daily-merge-skill)：日报合并（第二步）
+- [git-commit](https://github.com/huzhw/git-commit-skill)：Git 提交规范
+- [coding-rules](https://github.com/huzhw/coding-rules)：AI 编码协作规范
+- [reread-claude-md](https://github.com/huzhw/reread-claude-md-skill)：重新加载 CLAUDE.md 规则
 
 ---
 
