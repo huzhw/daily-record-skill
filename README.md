@@ -2,7 +2,7 @@
 
 日报流程第一步：总结当天完成的需求，按五维度评估工时，写入 md 表格。
 
-## 参见
+## 相关技能
 - [daily-merge](https://github.com/huzhw/daily-merge-skill)：日报合并（第二步）
 - [git-commit](https://github.com/huzhw/git-commit-skill)：Git 提交规范
 - [coding-rules](https://github.com/huzhw/coding-rules)：AI 编码协作规范
@@ -52,11 +52,6 @@ git clone https://github.com/huzhw/daily-record-skill.git ~/.claude/skills/daily
 ```
 
 安装后在 AI 编码助手里说「补充日报」即可触发。
-
-## 相关项目
-
-- [daily-merge](https://github.com/huzhw/daily-merge-skill) — 日报第二步：md 合并到 Excel
-- [git-commit-skill](https://github.com/huzhw/git-commit-skill) — Git 提交规范，同系列
 
 ## 许可
 
