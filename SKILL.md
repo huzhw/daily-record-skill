@@ -54,16 +54,19 @@ $HOME\Desktop\报告-{年份}年\日报-{年份}-{月份}月\日报需求记录-
 
 ### 第 1 步：汇总当日全部提交 🔴 必须完整，不准截断
 
+🔴 **只读自己的提交。** 所有 `git log` / `git diff` 必须加 `--author="胡志伟"`，过滤掉其他人的 commit。作者身份以 `git log --format="%an <%ae>"` 输出的 `胡志伟 <huzhiwei@lanxum.com>` 为准。同一分支上可能有其他同事的提交，一律排除。
+
 ```bash
-git log --format="%h %ai %s" --since="YYYY-MM-DD 00:00:00" --until="YYYY-MM-DD 23:59:59"
+git log --format="%h %ai %s" --author="胡志伟" --since="YYYY-MM-DD 00:00:00" --until="YYYY-MM-DD 23:59:59"
 ```
 
 **禁止**加 `-n` 限制条数。列出**全部**提交，按时间排序。
 
-同时统计全天变更总量：
+同时统计全天变更总量（同样只统计自己的）：
 ```bash
-git diff --stat <最早commit>..<最晚commit>
+git diff --stat <最早commit>..<最晚commit> --author="胡志伟" 2>/dev/null || git diff --stat <最早commit>..<最晚commit>
 ```
+> 如果 `--author` 在 diff 中不生效，改为逐 commit 汇总：`for c in $(git log --author="胡志伟" --format="%h" --since="..."); do git diff --stat $c^..$c; done`
 
 输出格式：
 ```
@@ -315,6 +318,7 @@ AI 辅助下人工工时 > 日历时间 是正常的，不需压降
 
 ## 严禁
 
+- 🔴 **禁止包含其他人的提交** — 所有 `git log`/`git diff` 必须加 `--author="胡志伟"`，同一个分支上同事的提交一律排除
 - 🔴 **禁止截断提交列表** — `git log` 不准加 `-n`，必须列出当日全部提交
 - 🔴 **禁止不合并直接评估** — 同文件/同模块/同功能必须合并后再算
 - 🔴 **禁止已完成任务用乘法返工公式** — 已完成的只用边界遗漏
