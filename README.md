@@ -1,5 +1,15 @@
 # daily-record — 日报需求记录
 
+## 相关技能
+
+- [daily-merge](https://github.com/huzhw/daily-merge-skill) — 日报第二步：读取当天 md，合并到当月累积 Excel 日报表
+- [git-commit](https://github.com/huzhw/git-commit-skill) — Git 提交规范
+- [coding-rules](https://github.com/huzhw/coding-rules) — AI 编码协作规范
+- [reread-claude-md](https://github.com/huzhw/reread-claude-md-skill) — 重新加载 CLAUDE.md 规则
+- [token-3000](https://github.com/huzhw/token-3000-skill) — API 一键切换（公司免费 ↔ 自己花钱）
+
+---
+
 日报流程第一步：从 git 提交记录中提取当天完成的需求，按五维度（设计调研、代码改动、测试验证、风险返工、沟通协作）逐项评估工时，写入 md 表格。
 
 ## 核心能力
@@ -12,14 +22,6 @@
 ## 触发词
 
 补充日报、写日报、记录需求、日报总结、今天干了什么
-
-## 关联技能
-
-- [daily-merge](https://github.com/huzhw/daily-merge-skill) — 日报第二步：读取当天 md，合并到当月累积 Excel 日报表
-- [git-commit](https://github.com/huzhw/git-commit-skill) — Git 提交规范
-- [coding-rules](https://github.com/huzhw/coding-rules) — AI 编码协作规范
-- [reread-claude-md](https://github.com/huzhw/reread-claude-md-skill) — 重新加载 CLAUDE.md 规则
-- [token-3000](https://github.com/huzhw/token-3000-skill) — API 一键切换（公司免费 ↔ 自己花钱）
 
 ## 完整流程
 
