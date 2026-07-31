@@ -7,6 +7,7 @@
 - [coding-rules](https://github.com/huzhw/coding-rules) — AI 编码协作规范
 - [reread-claude-md](https://github.com/huzhw/reread-claude-md-skill) — 重新加载 CLAUDE.md 规则
 - [token-3000](https://github.com/huzhw/token-3000-skill) — API 一键切换（公司免费 ↔ 自己花钱）
+- [service-manager](https://github.com/huzhw/service-manager) — 桌面服务管理工具
 
 ---
 
@@ -60,15 +61,6 @@ git clone https://github.com/huzhw/daily-record-skill.git ~/.claude/skills/daily
 ```
 
 安装后在 AI 编码助手里说「补充日报」即可触发。
-
-## 相关仓库
-
-- [coding-rules](https://github.com/huzhw/coding-rules) — AI 编码协作规范
-- [git-commit](https://github.com/huzhw/git-commit-skill) — Git 提交规范
-- [daily-merge](https://github.com/huzhw/daily-merge-skill) — 日报 Excel 合并
-- [reread-claude-md](https://github.com/huzhw/reread-claude-md-skill) — CLAUDE.md 规则重载
-- [token-3000](https://github.com/huzhw/token-3000-skill) — API Token 一键切换
-- [service-manager](https://github.com/huzhw/service-manager) — 桌面服务管理工具
 
 ## 许可
 
