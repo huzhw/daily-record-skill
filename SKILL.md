@@ -154,6 +154,13 @@ git diff --stat <最早commit>..<最晚commit> --author="胡志伟" 2>/dev/null 
 
 ---
 
+## 🔴 Windows bash 执行规范（反复踩坑，禁止违反）
+
+- **禁用 `python -c "多行代码"`**：本环境 bash 带 cmd 包装层，内联代码含 `||`/`&&`/换行会被 `goto :error` 拦截，报 `IndentationError: unexpected indent`。要多行处理 → 用 Write 写临时 `.py` 文件再 `python 文件.py`。
+- **JSON 用 jq**：`命令 | jq '.字段'` 提取，**禁止** `python -c` 二次处理。git log / officecli 输出都适用。
+
+---
+
 ### 第 4 步：工时评估（按合并后的任务逐条评估）
 
 逐维度展开分析并列出子项估算，**不准直接报总数**，**不准给区间值然后让用户自己选**。
